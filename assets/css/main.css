@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+   
+
+}
+
+a{
+    text-decoration: none;
+}
+/* >>>>>>>>>>>> Nav Style >>>>>>>>>>>> */
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 500;
+    background-color: #f1f1f1;
+    width: fit-content;
+
+}
+
+aside picture img {
+    width: 50px;
+}
+
+.container {
+    height: 100%;
+}
+
+aside i {
+    cursor: pointer;
+}
+
+.nav-links ul li {
+    list-style-type: none;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-links ul {
+    padding: 0px;
+    
+}
+
+.nav-content {
+    width: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.nav-footer p {
+    line-height: 1.3;
+}
+
+.nav-items {
+    width: 70px;
+    padding-block: 10px;
+}
+.nav-footer
+{
+    height: fit-content;
+}
+
+.nav-items picture img
+{
+    cursor: pointer;
+}
+
+
+/* >>>>>>>>>>>> Main Style >>>>>>>>>>>> */
+
+main {
+    width: calc(100% - 70px);
+    margin-left: auto;
+}
+
+/* >>>>>>>>>>>> category-sec Style >>>>>>>>>>>> */
+
+ .card-inner {
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    cursor: pointer;
+}
+
+ .card-inner picture img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 1.3s;
+}
+
+ .card-inner:hover picture img {
+    transform: scale(0.7);
+}
+
+ .card-inner:hover .card-outer {
+    top: 35%;
+}
+
+ .card-outer {
+    border: solid 1px white;
+    border-radius: 10px;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    opacity: 80%;
+    transition: top 1.1s;
+}
+.TheCard 
+{
+    display: none;
+}
+/* >>>>>>>>>>>> Meal-details Style >>>>>>>>>>>> */
+.recipes p{
+    padding: 7px;
+    background-color: wheat;
+    width: fit-content;
+    color: brown;
+    border-radius: 10px;
+   
+}
+/* >>>>>>>>>>>> area-sec Style >>>>>>>>>>>> */
+
+.card-inn i
+{
+    font-size: 7rem;
+    color: rgba(39, 40, 44, 0.662);
+    
+}
+.card-inn
+{
+    cursor: pointer;
+    height: 300px;
+}
+
+/* >>>>>>>>>>>> Loading Style >>>>>>>>>>>> */
+.loading
+{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999999999;
+    overflow: hidden;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-bottom: 4px solid #FF3D00;
+    border-left: 4px solid transparent;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
